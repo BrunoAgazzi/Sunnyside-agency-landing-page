@@ -1,5 +1,5 @@
 footer{
-    background-color: hsla(168, 34%, 41%);
+    background-color: hsl(168, 58%, 60%);;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -13,19 +13,37 @@ footer{
     fill: blue;
 }
 
-footer nav{
+.nav-footer{
     margin-bottom: 50px;
 }
 
-footer nav a{
+.nav-footer a{
     text-decoration: none;
     color: var(--DarkDesaturatedCyan);
     font-family: var(--Font1);
     margin: 0 20px;
 }
 
+.nav-footer a:hover{
+  color: var(--White);
+}
+
 footer div a{
     text-decoration: none;
     color: var(--DarkDesaturatedCyan);
     margin: 0 10px;
+}
+
+footer svg{
+    fill: var(--DarkDesaturatedCyan);
+}
+footer svg:hover{
+    fill: var(--White);
+}
+
+
+@media (max-width: 375px) {
+    footer{
+        height: 200px ;
+    }
 }

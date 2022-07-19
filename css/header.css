@@ -4,20 +4,22 @@ header{
     background-size: cover;
     background-position: bottom;
     height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .burger-menu{
-    width: 20px;
+    width: 35px;
     display: none;
+    cursor: pointer;
 }
-
 .nav-container{
-
     display: flex;
     justify-content: space-between;
+    width: 90%;
     align-items: center;
     padding: 20px 30px;
 }
-
 .header-logo{
     width: 200px;
 }
@@ -27,7 +29,46 @@ header{
     color: white;
     margin: 0 10px;
 }
-
+.nav-container  a:nth-last-child(2){
+    font-family: var(--Font2);
+    background-color: white;
+    color: var(--VeryDarkDesaturated);
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+   
+}
+.nav-container  a:active{
+   background-color: rgba(255, 255, 255, 0.54);
+   color: var(--White);
+}
+.nav-burger{
+    background-color: aliceblue;
+    width: 80%;
+    position: relative;
+    top: -280px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.nav-burger a{
+    font-family: var(--Font1);
+    text-decoration: none;
+    color: var(--DarkGrayish);
+    margin: 20px 0;
+    font-size: 18px;
+}
+.contact-burger{
+    font-family: var(--Font2) !important;
+    background: var(--Yellow);
+    color: var(--VeryDarkDesaturated) !important;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 15px !important;
+}
 .header-title{
     width: 100%;
     display: flex;
@@ -51,12 +92,26 @@ header{
 /* Mobile  */
 
 @media (max-width: 375px) {
+    header{
+        background-image: url('../images/mobile/image-header.jpg');
+        height: 75vh;
+    }
     .burger-menu{
         display: block;
+        
     }
-    header a{
+    nav a{
         display: none;
     }
-    
+    .header-logo{
+        width: 150px;
+    }
+    .nav-container{
+        padding: 25px;
+    }
+    .header-title h1{
+        font-size: 40px;
+        text-align: center;
+    }
    
 }

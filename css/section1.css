@@ -12,15 +12,15 @@
 }
 
 .section1-whitespace h2{
-   font-family: var(--Font2);
+   font-family: var(--VeryDarkDesaturated);
    font-weight: 900;
-   font-size: 50px;
-   margin-bottom: 20px;
+   font-size: 48px;
+   margin: 0;
 }
 .section1-whitespace p{
     font-family: var(--Font1);
     font-size: 18px;
-    margin-bottom: 20px;
+    margin: 30px 0 ;
     line-height: 30px;
     opacity: .5;
  }
@@ -32,6 +32,13 @@
     font-size: 15px;
     margin-bottom: 40px;
     text-decoration: none;
+}
+.learn-more1:hover{
+    text-decoration:  underline 4px var(--Yellow);
+}
+.learn-more2:hover{
+    text-decoration:  underline var(--SoftRed) 4px ;
+    
 }
 
 .section1 div:nth-child(2),div:nth-child(3),div:nth-child(5),div:nth-child(6){
@@ -60,11 +67,78 @@
     text-align: center;
 }
 
+.section-text2{
+   
+}
+.section-text2 h2{
+    font-family: var(--Font2);
+    font-weight: 900;
+    font-size: 26px ;
+    color: var(--DarkBlue);
+}
+.section-text2 p{
+    font-family: var(--Font1);
+    font-size: 16px ;
+    color: var(--DarkBlue);
+    margin-bottom: 50px;
+    width: 80%;
+    line-height: 25px;
+}
+
+
 
 
 /* Mobile  */
 
 @media (max-width: 375px) {
+  
+    .section1 div{
+        height: 450px;
+        padding: 0;
+        margin: 0;
+    }
+    .section1-whitespace h2{
+        text-align: center;
+        font-size: 35px;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .section1-whitespace p{
+        text-align: center;
+        font-size: 15px;
+        width: 90%;
+        margin: 0 auto 50px;
+    }
+    .section1-whitespace a{
+        text-align: center;
+    }
+    .section-text2{
+        height: 600px !important;
+    }
+    .section-text2 h2{
+      
+    }
+    .section1 div:nth-child(2),div:nth-child(3){
+        height: 300px;
+    }
+    .section1 div:nth-child(2){
+        grid-row: 1;
+        background-image: url('../images/mobile/image-transform.jpg');
+    }
+    .section1 div:nth-child(3){
+        background-image: url('../images/mobile/image-stand-out.jpg');
+    }
+    .section1 div:nth-child(5){
+        background-image: url('../images/mobile/image-photography.jpg');
+    }
+    .section1 div:nth-child(6){
+        background-image: url('../images/mobile/image-graphic-design.jpg');
+        grid-row: 5;
+    }
+  
+}
+@media (max-width: 965px){
     .section1{
         grid-template-columns: repeat(1,1fr);
     }
